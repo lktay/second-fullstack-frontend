@@ -6,27 +6,46 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   const goTo = (id) => {
-    if (id === "search") {
+    if (id === "home") {
       navigate("/");
-    } else {
+    }
+    if (id === "about") {
       navigate("/about");
+    }
+    if (id === "anime-list") {
+      navigate("/animelist");
+    }
+    if (id === "search") {
+      navigate("/search");
     }
   };
 
   return (
     <div className="NavBar">
-      <div
-        id="search"
+      <button
+        id="home"
         onClick={(e) => goTo(e.target.id)}
       >
-        Search
-      </div>
-      <div
+        Home
+      </button>
+      <button
         id="about"
         onClick={(e) => goTo(e.target.id)}
       >
         About
-      </div>
+      </button>
+      <button
+        id="anime-list"
+        onClick={(e) => goTo(e.target.id)}
+      >
+        Anime List
+      </button>
+      <button
+        id="search"
+        onClick={(e) => goTo(e.target.id)}
+      >
+        Search
+      </button>
     </div>
   );
 };

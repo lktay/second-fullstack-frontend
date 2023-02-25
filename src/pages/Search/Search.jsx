@@ -4,12 +4,7 @@ import "./Search.css";
 const Search = () => {
   return (
     <div>
-      <h3>This is an anime to watch list</h3>
-      <p>It utilises the Jikan API to retrieve data, and mongoDB</p>
-      <p>made by leoni!</p>
-      <a href="https://github.com/lktay/second-fullstack-frontend">
-        <i className="fa-brands fa-github"></i>
-      </a>
+      <h3>search here</h3>
     </div>
   );
 };
