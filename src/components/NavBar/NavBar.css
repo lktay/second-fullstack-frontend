@@ -1,15 +1,18 @@
 .NavBar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
+  margin: 5% auto;
+  background-color: darkslategrey;
 }
-/* .NavBar > div {
-  font-size: 12px;
-  background-color: black;
-  color: aquamarine;
+button {
+  padding: 0.5% 4%;
   border: none;
-  border-radius: 15px 15px;
-  padding: 5px 10px;
-  margin: 20px;
-} */
+  background-color: darkslategrey;
+  color: antiquewhite;
+  font-weight: 600;
+}
+button:hover {
+  background-color: antiquewhite;
+  color: darkslategrey;
+}
