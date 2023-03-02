@@ -1,7 +1,16 @@
-.anime-card {
+.list-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+}
+.anime-card {
+  padding: 0;
+  margin: 0;
+}
+
+.is-complete {
+  opacity: 0.4;
 }
